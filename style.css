@@ -1,0 +1,62 @@
+body{
+margin:0;
+height:100vh;
+background:linear-gradient(135deg,#ffdde1,#ee9ca7);
+font-family: 'Segoe UI', sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container{
+max-width:600px;
+text-align:center;
+padding:30px;
+background: rgba(255,255,255,.25);
+border-radius:20px;
+backdrop-filter: blur(10px);
+position:relative;
+z-index:2;
+}
+
+h1{font-size:2.8rem;}
+p{font-size:1.1rem; line-height:1.7;}
+h2{margin-top:30px;}
+
+button{margin-top:20px;padding:12px 26px;border:none;border-radius:30px;background:#ff6f91;color:white;font-size:1.1rem;cursor:pointer;transition: transform .2s ease, box-shadow .2s ease;}
+
+button:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.15);}
+
+.fade{opacity:0;animation:fadeIn 1.2s ease forwards;}
+.fade.delay-1{animation-delay:.5s;}
+.fade.delay-2{animation-delay:2s;}
+.fade.delay-3{animation-delay:4s;}
+.fade.delay-4{animation-delay:6s;}
+.fade.delay-5{animation-delay:8s;}
+
+@keyframes fadeIn{to{opacity:1;}}
+
+video{display:none;opacity:0;transition:opacity 1.2s ease;}
+video.show{display:block;opacity:1;}
+
+.official-btn{position:relative;padding:14px 30px;border:none;border-radius:30px;background:#ff6f91;color:white;font-size:1.1rem;cursor:pointer;overflow:hidden;}
+
+.text-hover{display:none;}
+.official-btn:hover .text-normal{display:none;}
+.official-btn:hover .text-hover{display:inline-block;}
+.official-btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.15);}
+.text-hover{animation:point .8s infinite alternate;}
+@keyframes point{from{transform:translateX(0);}to{transform:translateX(6px);}}
+
+.hearts{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;overflow:hidden;z-index:0;}
+.hearts span{position:absolute;bottom:-50px;font-size:20px;opacity:.7;animation:floatUp 12s linear infinite;}
+.hearts span:nth-child(1){left:10%;animation-delay:0s;}
+.hearts span:nth-child(2){left:25%;animation-delay:2s;font-size:24px;}
+.hearts span:nth-child(3){left:40%;animation-delay:4s;}
+.hearts span:nth-child(4){left:55%;animation-delay:1s;font-size:22px;}
+.hearts span:nth-child(5){left:70%;animation-delay:3s;}
+.hearts span:nth-child(6){left:85%;animation-delay:5s;font-size:26px;}
+.hearts span:nth-child(7){left:15%;animation-delay:6s;}
+.hearts span:nth-child(8){left:60%;animation-delay:7s;}
+
+@keyframes floatUp{0%{transform:translateY(0) scale(1);opacity:0;}10%{opacity:.7;}100%{transform:translateY(-110vh) scale(1.3);opacity:0;}}
