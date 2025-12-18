@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<title>Tụi mình</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>For you</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="hearts">
-  <span>💗</span>
-  <span>💖</span>
-  <span>💞</span>
-  <span>💓</span>
-  <span>💘</span>
-  <span>💗</span>
-  <span>💖</span>
-  <span>💞</span>
+  <span>💗</span><span>💖</span><span>💞</span><span>💓</span>
+  <span>💘</span><span>💗</span><span>💖</span><span>💞</span>
 </div>
 
 <div class="container">
-<h1 id="typing"></h1>
+  <h1 id="typing"></h1>
 
-<p class="fade delay-1">
-Tụi mình nói chuyện với nhau cũng được 1 khoảng thời gian rồi ha
-</p>
+  <p class="fade delay-1">
+    Tụi mình nói chuyện với nhau cũng được 1 khoảng thời gian rồi ha
+  </p>
 
-<p class="fade delay-2">
-Quan tâm nhau, lo cho nhau, động viên nhau, an ủi nhau <br>
-Có những lúc anh tự nhiên cười với màn hình điện thoại,<br>
-mà cũng chẳng vì lý do gì cả...
-</p>
+  <p class="fade delay-2">
+    Quan tâm nhau, lo cho nhau, động viên nhau, an ủi nhau <br>
+    Có những lúc anh tự nhiên cười với màn hình điện thoại,<br>
+    mà cũng chẳng vì lý do gì cả...
+  </p>
 
-<p class="fade delay-3">
-Nên anh làm cái này, ko phải để nói điều gì to tát,<br>
-chỉ là muốn nói cho rõ ràng hơn 1 chút thôi nha <br>
-</p>
+  <p class="fade delay-3">
+    Nên anh làm cái này,<br>
+    không phải để nói điều gì to tát đâu,<br>
+    chỉ là anh muốn nói cho rõ ràng hơn thôi.
+  </p>
 
-<p class="fade delay-4">
-Em làm người yêu anh nha 💗
-</p>
+  <p class="fade delay-4">
+    Em làm người yêu anh nha… 💗
+  </p>
 
-<button class="official-btn fade delay-5" onclick="official()">
-  <span class="text-normal">Mình chính thức nha💗</span>
-  <span class="text-hover">👉Bấm đây nè em</span>
-</button>
+  <button class="official-btn fade delay-5" onclick="official()">
+    <span class="text-normal">Mình chính thức nha 💗</span>
+    <span class="text-hover">👉 Bấm đây nè em</span>
+  </button>
 
-<p id="response"></p>
+  <p id="response"></p>
 
-<video id="surpriseVideo" width="100%" playsinline>
-<source src="bestpart.mp4" type="video/mp4">
-</video>
+  <video id="surpriseVideo" width="100%" playsinline>
+    <source src="bestpart.mp4" type="video/mp4">
+  </video>
+
+  <!-- hidden final message -->
+  <p id="finalMessage" class="final fade">
+    Cảm ơn em vì đã ở đây.<br>
+    Và vì đã chọn anh 💗
+  </p>
 </div>
+
 <script src="script.js"></script>
 </body>
+</html>
