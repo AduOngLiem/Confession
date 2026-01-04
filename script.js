@@ -16,7 +16,6 @@ function official() {
   const final = document.getElementById("finalMessage");
 
   response.innerText = "Vậy là tụi mình chính thức rồi ha 💗";
-  response.innerText = "Tặng em nè, nhớ xem đén cuối đó nha";
 
   setTimeout(() => {
     video.classList.add("show");
